@@ -1,0 +1,19 @@
+{
+  "name": "confetti-cuisine-capstone",
+  "version": "3.0.0",
+  "description": "Lesson 16 Capstone - Full CRUD with MongoDB",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "seed": "node seed.js"
+  },
+  "keywords": ["express", "ejs", "mongoose", "crud", "cooking"],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "ejs": "^3.1.9",
+    "express-ejs-layouts": "^2.5.1",
+    "mongoose": "^5.13.15"
+  }
+}

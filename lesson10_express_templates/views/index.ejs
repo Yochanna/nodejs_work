@@ -1,0 +1,8 @@
+<% if (typeof name !== 'undefined') { %>
+  <h1>Hello, <%= name %>!</h1>
+  <p>Welcome to our Express.js application with EJS templates.</p>
+<% } else { %>
+  <h1>Welcome!</h1>
+  <p>This is the home page of our Express.js application.</p>
+  <p>Try visiting <a href="/name/YourName">/name/YourName</a> to see dynamic content!</p>
+<% } %>

@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="col-sm-6">
+    <img src="/images/fruit.jpg" alt="Fresh fruits">
+  </div>
+  <div class="col-sm-6">
+    <h1 class="title">Learn to Cook Cutting Edge Food</h1>
+    <h2>Our Courses</h2>
+
+    <!-- ENHANCEMENT: Better course display with cards -->
+    <div class="courses-list">
+      <% offeredCourses.forEach(course => { %>
+        <div class="course-card">
+          <h3><%= course.title %></h3>
+          <p class="course-price">$<%= course.cost %></p>
+          <p class="course-description"><%= course.description %></p>
+          <div class="course-meta">
+            <span class="badge">📅 <%= course.duration %></span>
+            <span class="badge">📊 <%= course.level %></span>
+          </div>
+          <a href="/courses/<%= course.id %>" class="button">View Details</a>
+        </div>
+      <% }); %>
+    </div>
+  </div>
+</div>

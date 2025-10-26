@@ -1,0 +1,13 @@
+{
+  "name": "confetti-cuisine",
+  "version": "1.0.0",
+  "description": "Lesson 7 Capstone - Custom Web Server with Routing",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "download-images": "node download-images.js"
+  },
+  "keywords": ["node", "web-server", "routing"],
+  "author": "",
+  "license": "ISC"
+}

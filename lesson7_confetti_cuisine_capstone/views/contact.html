@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confetti Cuisine - Contact</title>
+  <link rel="stylesheet" href="/public/bootstrap.css">
+  <link rel="stylesheet" href="/public/confetti_cuisine.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Confetti Cuisine</h1>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/courses.html">Courses</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Contact Us</h2>
+      <p>Have questions? We'd love to hear from you!</p>
+
+      <form action="/contact" method="POST">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Confetti Cuisine. All rights reserved.</p>
+    </footer>
+  </div>
+  <script src="/public/confettiCuisine.js"></script>
+</body>
+</html>

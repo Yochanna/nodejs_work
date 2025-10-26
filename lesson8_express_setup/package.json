@@ -1,0 +1,19 @@
+{
+  "name": "lesson8_express_setup",
+  "version": "1.0.0",
+  "description": "Lesson 8: Setting up an app with Express.js",
+  "main": "main.js",
+  "scripts": {
+    "start": "nodemon main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["express", "node", "web-framework"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.0"
+  }
+}

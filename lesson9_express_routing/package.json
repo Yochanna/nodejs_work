@@ -1,0 +1,15 @@
+{
+  "name": "lesson9_express_routing",
+  "version": "1.0.0",
+  "description": "Lesson 9: Routing in Express.js - Building routes with Express.js, analyzing request data, and using MVC",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "keywords": ["express", "routing", "mvc", "node"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

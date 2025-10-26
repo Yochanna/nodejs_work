@@ -1,0 +1,41 @@
+<div class="page-header">
+  <h1>Our Members 👥</h1>
+  <p>Meet our fitness community</p>
+</div>
+
+<div class="list-container">
+  <% if (members.length === 0) { %>
+    <div class="empty-state">
+      <h3>No members yet!</h3>
+      <p>Be the first to join our fitness community.</p>
+      <a href="/join" class="btn">Join Now</a>
+    </div>
+  <% } else { %>
+    <% members.forEach(member => { %>
+      <div class="member-card">
+        <div class="member-info">
+          <h3><%= member.name %></h3>
+          <p class="item-label">
+            <span>📧 Email:</span> <%= member.email %>
+          </p>
+          <p class="item-label">
+            <span>🎖️ Level:</span> 
+            <span class="badge badge-<%= member.membershipLevel.toLowerCase() %>">
+              <%= member.membershipLevel %>
+            </span>
+          </p>
+          <p class="item-label">
+            <span>📅 Joined:</span> <%= new Date(member.joinedDate).toLocaleDateString() %>
+          </p>
+        </div>
+      </div>
+    <% }); %>
+  <% } %>
+</div>
+
+<div class="stats-box">
+  <h3>📊 Member Statistics</h3>
+  <p><strong>Total Members:</strong> <%= members.length %></p>
+  <p><strong>Database:</strong> fitness_tracker_db</p>
+  <p><strong>Collection:</strong> members</p>
+</div>

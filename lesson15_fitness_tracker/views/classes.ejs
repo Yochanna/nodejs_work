@@ -1,0 +1,21 @@
+<div class="page-header">
+  <h1>Our Fitness Classes 🎯</h1>
+  <p>Choose from our variety of expert-led classes</p>
+</div>
+
+<div class="classes-grid">
+  <% offeredClasses.forEach(cls => { %>
+    <div class="class-card">
+      <h3><%= cls.name %></h3>
+      <p class="instructor">👤 Instructor: <%= cls.instructor %></p>
+      <p class="time">🕐 <%= cls.time %></p>
+      <button class="btn">Book Class</button>
+    </div>
+  <% }); %>
+</div>
+
+<div class="cta-box">
+  <h3>Ready to get started?</h3>
+  <p>Join our gym today and get access to all classes!</p>
+  <a href="/join" class="btn btn-large">Become a Member</a>
+</div>

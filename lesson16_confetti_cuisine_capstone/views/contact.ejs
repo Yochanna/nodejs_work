@@ -1,0 +1,37 @@
+<div class="page-header">
+  <h1>Subscribe to Our Newsletter 📧</h1>
+  <p>Get exclusive recipes and cooking tips delivered to your inbox!</p>
+</div>
+
+<div class="form-container">
+  <form action="/subscribe" method="POST" id="subscribeForm">
+    <div class="form-group">
+      <label for="name">Full Name *</label>
+      <input type="text" id="name" name="name" required placeholder="Enter your name">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email Address *</label>
+      <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+    </div>
+
+    <div class="form-group">
+      <label for="zipCode">ZIP Code *</label>
+      <input type="text" id="zipCode" name="zipCode" required pattern="[0-9]{5}" placeholder="12345">
+      <small>5-digit ZIP code</small>
+    </div>
+
+    <button type="submit" class="button">Subscribe Now</button>
+  </form>
+</div>
+
+<div class="info-box">
+  <h3>Why Subscribe?</h3>
+  <ul style="line-height: 2; margin-left: 20px;">
+    <li>🎉 Exclusive recipes and cooking tips</li>
+    <li>📚 Early access to new courses</li>
+    <li>💰 Special discounts and promotions</li>
+    <li>👨‍🍳 Chef interviews and insights</li>
+    <li>📧 Weekly newsletter with cooking inspiration</li>
+  </ul>
+</div>

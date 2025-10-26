@@ -1,0 +1,30 @@
+<div class="success-container">
+  <div class="success-icon">✅</div>
+  <h1>Welcome to Fitness Tracker, <%= memberName %>!</h1>
+
+  <div class="confirmation-box">
+    <h3>Your Membership Details:</h3>
+    <p><strong>Name:</strong> <%= memberName %></p>
+    <p><strong>Email:</strong> <%= memberEmail %></p>
+    <p><strong>Membership Level:</strong> 
+      <span class="badge badge-<%= membershipLevel.toLowerCase() %>">
+        <%= membershipLevel %>
+      </span>
+    </p>
+    <p class="success-message">
+      🎉 You've been successfully added to our database!
+    </p>
+  </div>
+
+  <div class="next-steps">
+    <h3>What's Next?</h3>
+    <ul>
+      <li>📧 Check your email for confirmation</li>
+      <li>🏋️ Browse our <a href="/classes">fitness classes</a></li>
+      <li>👥 Meet other <a href="/members">members</a></li>
+      <li>🏠 Return to <a href="/">home page</a></li>
+    </ul>
+  </div>
+
+  <a href="/" class="btn btn-large">Go to Home</a>
+</div>

@@ -1,0 +1,33 @@
+<div class="page-header">
+  <h1><%= course.title %> 🍳</h1>
+  <p class="course-price-large">$<%= course.cost %></p>
+</div>
+
+<div class="detail-box">
+  <h3>Course Overview</h3>
+  <p style="font-size: 1.2rem; line-height: 1.8;"><%= course.description %></p>
+
+  <div style="margin-top: 30px;">
+    <h4>Course Details:</h4>
+    <p><strong>👨‍🏫 Instructor:</strong> <%= course.instructor %></p>
+    <p><strong>⏱️ Duration:</strong> <%= course.duration %></p>
+    <p><strong>📊 Level:</strong> <%= course.level %></p>
+    <p><strong>💰 Price:</strong> $<%= course.cost %></p>
+  </div>
+</div>
+
+<div class="detail-box" style="background: #e8f5e9; border-left-color: #4caf50;">
+  <h3>What You'll Learn:</h3>
+  <ul style="line-height: 2; margin-left: 20px;">
+    <li>Professional cooking techniques</li>
+    <li>Recipe development and testing</li>
+    <li>Kitchen organization and workflow</li>
+    <li>Presentation and plating skills</li>
+    <li>Ingredient selection and preparation</li>
+  </ul>
+</div>
+
+<div class="action-buttons">
+  <a href="/contact" class="button">Enroll in This Course</a>
+  <a href="/courses" class="button-secondary">Back to All Courses</a>
+</div>

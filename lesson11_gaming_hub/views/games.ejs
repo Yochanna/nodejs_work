@@ -1,0 +1,16 @@
+<div class="games-header">
+  <h1>Our Game Collection</h1>
+  <p>Explore our amazing selection of games</p>
+</div>
+
+<div class="games-grid">
+  <% games.forEach(game => { %>
+    <div class="game-card">
+      <img src="/images/game-placeholder.png" alt="<%= game.name %>">
+      <h3><%= game.name %></h3>
+      <p class="genre">Genre: <%= game.genre %></p>
+      <p class="rating">⭐ Rating: <%= game.rating %>/5</p>
+      <button class="play-btn">Play Now</button>
+    </div>
+  <% }); %>
+</div>

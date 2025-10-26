@@ -1,0 +1,31 @@
+<div class="page-header">
+  <h1>Our Cooking Courses 👨‍🍳</h1>
+  <p>Learn to cook with programming-inspired techniques!</p>
+</div>
+
+<div class="courses-list">
+  <% offeredCourses.forEach(course => { %>
+    <div class="course-card">
+      <h3><%= course.title %></h3>
+      <p class="course-price">$<%= course.cost %></p>
+      <p class="course-description"><%= course.description %></p>
+
+      <div class="course-meta">
+        <span class="badge">⏱️ <%= course.duration %></span>
+        <span class="badge">📊 <%= course.level %></span>
+        <span class="badge">👨‍🏫 <%= course.instructor %></span>
+      </div>
+
+      <div style="margin-top: 20px;">
+        <a href="/courses/<%= course.id %>" class="button">View Details</a>
+        <a href="/contact" class="button-secondary">Enroll Now</a>
+      </div>
+    </div>
+  <% }); %>
+</div>
+
+<div class="cta-section">
+  <h3>Ready to start cooking?</h3>
+  <p>Subscribe to our newsletter for exclusive recipes and course updates!</p>
+  <a href="/contact" class="button">Subscribe Now</a>
+</div>

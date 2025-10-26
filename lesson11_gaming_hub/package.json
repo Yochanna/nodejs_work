@@ -1,0 +1,14 @@
+{
+  "name": "gaming-hub",
+  "version": "1.0.0",
+  "description": "A gaming hub website demonstrating Express.js static file serving",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "ejs": "^3.1.9",
+    "express-ejs-layouts": "^2.5.1"
+  }
+}

@@ -1,0 +1,29 @@
+<div class="success-container">
+  <div class="success-icon">✅</div>
+  <h1>Thank You, <%= subscriberName %>!</h1>
+
+  <div class="confirmation-box">
+    <h3>🎉 You're Now Subscribed!</h3>
+    <p><strong>Name:</strong> <%= subscriberName %></p>
+    <p><strong>Email:</strong> <%= subscriberEmail %></p>
+    <p><strong>ZIP Code:</strong> <%= subscriberZip %></p>
+    <p class="success-message">
+      Your subscription has been saved to our database!
+    </p>
+  </div>
+
+  <div class="next-steps">
+    <h3>What's Next?</h3>
+    <ul>
+      <li>📧 Check your email for a confirmation message</li>
+      <li>📚 Browse our <a href="/courses">cooking courses</a></li>
+      <li>👥 See other <a href="/subscribers">subscribers</a></li>
+      <li>🏠 Return to <a href="/">home page</a></li>
+    </ul>
+  </div>
+
+  <div style="text-align: center; margin-top: 30px;">
+    <a href="/" class="button">Go to Home</a>
+    <a href="/courses" class="button-secondary">Browse Courses</a>
+  </div>
+</div>
