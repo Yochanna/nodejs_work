@@ -9,6 +9,7 @@
   "author": "Your Name",
   "license": "ISC",
   "dependencies": {
-    "cities": "^2.0.0"
+    "cities": "^2.0.0",
+    "http-status-codes": "^2.3.0"
   }
 }
