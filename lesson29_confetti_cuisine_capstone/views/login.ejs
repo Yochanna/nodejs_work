@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<head><title>Login</title></head>
+<body>
+  <nav>
+    <% if (user) { %>
+      <span>Hi, <%= user.username %></span> | <form action="/logout" method="post" style="display:inline"><button>Logout</button></form>
+    <% } else { %>
+      <a href="/login">Login</a> | <a href="/register">Register</a>
+    <% } %>
+  </nav>
+  <h1>Login</h1>
+  <% if (error) { %><p style="color:red"><%= error %></p><% } %>
+  <form method="post" action="/login">
+    <label>Username <input name="username" /></label><br/>
+    <label>Password <input type="password" name="password" /></label><br/>
+    <button type="submit">Login</button>
+  </form>
+</body>
+</html>
