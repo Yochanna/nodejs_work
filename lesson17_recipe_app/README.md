@@ -1,5 +1,5 @@
 
-# Turnkey Unit 4 - Lesson 17 Recipe App
+Lesson 17 Recipe App
 
 Ready-to-run package aligned with prior project conventions.
 
