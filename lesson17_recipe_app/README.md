@@ -1,7 +1,6 @@
 
 Lesson 17 Recipe App
 
-Ready-to-run package aligned with prior project conventions.
 
 ## Quick Start
 
@@ -30,8 +29,5 @@ Copy `.env.example` to `.env` as needed.
 - lint: eslint .
 - format: prettier --write .
 
-## Notes
-- Follows the same code style/level from the previous chat.
-- If validation is included (validate.js), errors return sensible messages.
-- Static assets served from `public/` and views from `views/`.
+
 
