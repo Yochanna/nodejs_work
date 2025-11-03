@@ -1,6 +1,6 @@
 # Gaming Hub - Lesson 11 Project
 
-This project demonstrates **serving static files with Express.js** (Section 11.3).
+This project demonstrates **serving static files with Express.js** 
 
 ## Key Feature: Static File Serving
 
@@ -58,7 +58,7 @@ lesson11_gaming_hub/
    - `/public/js/main.js` → `http://localhost:3000/js/main.js`
    - `/public/images/hero-banner.png` → `http://localhost:3000/images/hero-banner.png`
 
-3. **In your EJS templates**, reference them without "public":
+3. **In EJS templates**, reference them without "public":
    ```html
    <link rel="stylesheet" href="/css/style.css">
    <script src="/js/main.js"></script>
@@ -73,14 +73,3 @@ lesson11_gaming_hub/
 - `POST /subscribe` - Newsletter subscription
 - `404` - Custom error page (static HTML)
 
-## Learning Objectives
-
-✅ Understand `express.static()` middleware
-✅ Organize static assets in a public directory
-✅ Reference static files in templates
-✅ Serve CSS, JavaScript, and images efficiently
-✅ Handle 404 errors with static HTML
-
----
-
-**Note**: This is a different implementation from the teacher's example, demonstrating the same concepts with a gaming theme instead of a cuisine theme.
