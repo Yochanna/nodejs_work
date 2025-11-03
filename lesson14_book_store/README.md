@@ -2,9 +2,9 @@
 
 ## 🎯 Learning Objectives
 
-This lesson introduces **Mongoose**, an ODM (Object Data Modeling) library for MongoDB and Node.js.
+**Mongoose**, an ODM (Object Data Modeling) library for MongoDB and Node.js.
 
-### What You'll Learn:
+
 - ✅ Installing and connecting with Mongoose
 - ✅ Creating schemas
 - ✅ Defining models
@@ -231,16 +231,6 @@ db.readers.find({ favoriteGenre: "Fantasy" })
 db.readers.deleteMany({})
 ```
 
-## 📝 Differences from Teacher's Version
-
-| Feature | Teacher (Recipe App) | Your Version (Book Store) |
-|---------|---------------------|---------------------------|
-| Theme | Recipes/Subscribers | Books/Readers |
-| Database | recipe_db | book_store_db |
-| Model | Subscriber | Reader |
-| Fields | name, email, zipCode | name, email, favoriteGenre, joinedDate |
-| Examples | 2 save methods | 3 save methods |
-
 ## ⚠️ Common Issues
 
 ### "MongooseError: Operation buffering timed out"
@@ -248,7 +238,7 @@ db.readers.deleteMany({})
 - Start it: `mongod`
 
 ### "ValidationError: Path `name` is required"
-- You're trying to save without required fields
+- Trying to save without required fields
 - Make sure all required fields are provided
 
 ### Deprecation warnings?
@@ -259,24 +249,3 @@ mongoose.connect("mongodb://0.0.0.0:27017/book_store_db", {
   useUnifiedTopology: true
 });
 ```
-
-## 💡 Try It Yourself
-
-Modify the code to:
-1. Add more fields to the schema (age, membershipLevel, etc.)
-2. Add validation rules (min/max, enum, etc.)
-3. Create a Book model with its own schema
-4. Find readers by specific criteria
-5. Update existing readers
-
-## 🎓 Next Steps
-
-**Lesson 15** will cover:
-- Full CRUD operations (Create, Read, Update, Delete)
-- Subscribers controller
-- Displaying data in views
-- Seed data for testing
-
----
-
-**Excellent work learning Mongoose!** 🎉
