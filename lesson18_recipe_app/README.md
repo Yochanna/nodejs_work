@@ -1,7 +1,5 @@
+Unit4 Lesson 18 Recipe App
 
-# Turnkey Unit 4 - Lesson 18 Recipe App
-
-Ready-to-run package aligned with prior project conventions.
 
 ## Quick Start
 
