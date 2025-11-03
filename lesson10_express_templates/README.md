@@ -1,8 +1,5 @@
 # Lesson 10: Connecting Views with Templates
 
-This project demonstrates how to use EJS templating engine with Express.js, including layouts and partials.
-
-## What You'll Learn
 
 - Setting up EJS as a templating engine
 - Passing data from controllers to views
@@ -49,7 +46,6 @@ The server will start on port 3000.
 ## Testing the Application
 
 1. **Home Page**: Visit http://localhost:3000
-   - You'll see the welcome page with the layout and navigation
 
 2. **Dynamic Name Route**: Visit http://localhost:3000/name/Jon
    - Replace "Jon" with any name
@@ -136,15 +132,3 @@ The `<%- body %>` tag in layout.ejs is where view content is inserted.
 3. **Variables undefined**: Always check if variables exist before using them in views
 4. **Partials not found**: Use correct relative paths from the views folder
 
-## Next Steps
-
-In Lesson 11, you'll learn about:
-- Modifying the start script in package.json
-- Handling errors with middleware
-- Serving static files with Express.js
-
-## Additional Resources
-
-- [EJS Documentation](https://ejs.co/)
-- [Express.js Guide](https://expressjs.com/en/guide/routing.html)
-- [express-ejs-layouts](https://www.npmjs.com/package/express-ejs-layouts)
